@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana PNL Tracker</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      width: 340px; /* Wider popup */
+      padding: 15px;
+      background: #151536; /* Matched background */
+      color: white;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    #walletAddress {
+      width: 100%;
+      padding: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: white;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    #walletAddress:focus {
+      border-color: #00d9ff;
+    }
+
+    input::placeholder {
+      color: #ccc;
+      font-style: italic;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    button {
+      flex: 1;
+      padding: 8px;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      cursor: help;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 0 5px;
+    }
+
+    button#saveWallet {
+      background: linear-gradient(45deg, #00d9ff, #007bff);
+      color: white;
+    }
+
+    button#resetPNL {
+      background: linear-gradient(45deg, #ff6a00, #ff0000);
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Wallet Address</h2>
+    <input type="text" id="walletAddress" placeholder="Solana Wallet">
+    <div class="button-group">
+      <button id="saveWallet">Save</button>
+      <button id="resetPNL">Reset</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

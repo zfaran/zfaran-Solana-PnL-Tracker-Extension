@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Solana PNL Tracker",
+  "version": "1.0",
+  "description": "Tracks daily PNL of a Solana wallet.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://neo.bullx.io/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://neo.bullx.io/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
