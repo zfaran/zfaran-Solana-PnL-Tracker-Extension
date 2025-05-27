@@ -1,6 +1,6 @@
 # Solana PnL Tracker Extension
 
-![Banner Preview](https://i.ibb.co/TDxVnsbT/e751c696-c082-4778-855c-fe3578314259.png)
+![Banner Preview](https://i.ibb.co/R1dd5Pr/e751c696-c082-4778-855c-fe3578314259.png)
 
 A real-time profit/loss tracker for Solana wallets that displays as an overlay on any webpage.
 
@@ -32,6 +32,17 @@ A real-time profit/loss tracker for Solana wallets that displays as an overlay o
 1. Go to [Helius Dashboard](https://dev.helius.xyz/)
 2. Sign up/log in and create a new API key
 3. Copy your key (looks like `14793e41-9228-4b04-9f09-9168a741779c`)
+Open content.js in a text editor and replace this exact line:
+ `const API = "PASTE_YOUR_HELIUS_KEY_HERE"; // ← Replace this string`.
+
+4. Load the Extension in Chrome
+Open Chrome and go to:
+`chrome://extensions/`
+Enable Developer mode (toggle in top-right)
+Click Load unpacked
+Select the cloned repository folder
+
+
 
 
 ## 🌐 Configure Specific Websites (Optional)
