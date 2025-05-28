@@ -25,7 +25,7 @@ A real-time profit/loss tracker for Solana wallets that displays as an overlay o
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/solana-pnl-tracker.git
+   git clone https://github.com/zfaran/solana-pnl-tracker.git
    cd solana-pnl-tracker
 
    ### Step 1: Get Your Helius API Key
